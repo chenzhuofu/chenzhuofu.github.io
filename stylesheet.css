@@ -64,14 +64,14 @@
 }
 
 a {
-  color: #1772d0;
-  text-decoration: none;
+  color: #4682b4; /* Soft, medium blue */
+  text-decoration: none; /* Removes default underline */
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
-  text-decoration: none;
+  color: #3a6f91; /* Slightly darker blue on hover */
+  text-decoration: underline; /* Optional underline on hover */
 }
 
 body,

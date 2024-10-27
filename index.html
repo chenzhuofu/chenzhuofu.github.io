@@ -28,6 +28,23 @@
 
     <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
     <link rel="icon" type="image/jpg" href="images/logo.jpg">
+
+    <style>
+        .underline-effect {
+            position: relative;
+        }
+
+        .underline-effect::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0.05em; /* Adjust to control overlap */
+            width: 100%;
+            height: 0.4em; /* Adjust thickness */
+            background-color: #add8e6; /* Adjust color */
+            z-index: -1; /* Ensures it stays behind the text */
+        }
+    </style>
 </head>
 
 <body class="bg_colour">
@@ -51,7 +68,7 @@
                                 <td style="padding:2.5%;width:60%;vertical-align:middle">
                                     <p style="text-align:center">
                                     <h1 style="text-align:center">
-                                        <name>Zhuofu Chen 「陈卓夫」</name>
+                                        <span class="underline-effect">Zhuofu Chen</span>
                                     </h1>
                                     </p>
 
@@ -97,7 +114,9 @@
                         <tbody>
                             <tr>
                                 <td style="padding:20px;width:100%;vertical-align:middle">
-                                    <heading style="display:block; margin-bottom:10px;">Interests</heading>
+                                    <heading style="display:block; margin-bottom:10px;">
+                                        <span class="underline-effect">Interests</span>
+                                    </heading>
                                     <p>
                                         My general purpose is to redesign next-generation datacenter/cloud operating systems to 
                                         bridge the gap between existing hardware and emerging needs of software,
@@ -161,7 +180,9 @@
                             <tr>
                                 <td style="padding:20px;width:100%;vertical-align:middle">
                                     <div style="display:flex; align-items:baseline; margin-bottom:10px;">
-                                        <heading style="margin-right:10px;">Publications</heading>
+                                        <heading style="margin-right:10px;">
+                                            <span class="underline-effect">Publications</span>
+                                        </heading>
                                         <div style="font-size:100%;">(&#42; indicates equal contribution)</div>
                                     </div>
                                     <p>
